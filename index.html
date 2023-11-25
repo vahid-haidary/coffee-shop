@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="icon" href="./images/fav-icon.png" type="image/png"><!--ایکون سایت-->
 </head>
-<body class="font-Dana">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- All icons -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -21,18 +21,18 @@
           </symbol>
     </svg>
 
-<header class="flex items-center w-[90%] h-24 mx-auto pr-10 pl-4 py-5 bg-black/50 rounded-3xl">
+<header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 mx-auto px-10 py-5 bg-black/50 rounded-3xl">
 <!-- menu container -->
-<div class="flex justify-between w-full ">
+<div class="flex items-center justify-between w-full ">
     <!-- menu bar -->
-    <nav class="flex gap-x-9">
+    <nav class="flex items-center gap-x-9">
         <!-- logo header -->
         <div>
             <img src="./images/app-logo.png" alt="Coffee logo">
         </div>
         <!-- menu items -->
-        <ul class="flex gap-x-9">
-            <li><a href="#">صفحه اصلی</a></li>
+        <ul class="flex gap-x-9 text-xl text-gray-300">
+            <li class="font-DanaMedium text-orange-200"><a href="#">صفحه اصلی</a></li>
             <li><a href="#">فروشگاه</a>
                 <!-- submenu -->
                 <ul class="hidden">
