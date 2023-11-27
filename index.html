@@ -21,21 +21,21 @@
           </symbol>
     </svg>
 
-<header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 mx-auto px-10 py-5 bg-black/50 rounded-3xl">
+<header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 mx-auto px-10 py-5 bg-black/50 rounded-3xl backdrop-blur-[6px]">
 <!-- menu container -->
 <div class="flex items-center justify-between w-full ">
     <!-- menu bar -->
-    <nav class="flex items-center gap-x-9">
+    <nav class="flex items-center gap-x-9 h-14">
         <!-- logo header -->
         <div>
             <img src="./images/app-logo.png" alt="Coffee logo">
         </div>
         <!-- menu items -->
-        <ul class="flex gap-x-9 text-xl text-gray-300">
-            <li class="font-DanaMedium text-orange-200"><a href="#">صفحه اصلی</a></li>
-            <li><a href="#">فروشگاه</a>
+        <ul class="flex gap-x-9 h-full text-xl text-gray-300 tracking-tightest child:leading-[56px]">
+            <li class="font-DanaMedium text-orange-200 transition-colors"><a href="#">صفحه اصلی</a></li>
+            <li class="relative group"><a href="#" class="group-hover:text-orange-300">فروشگاه</a>
                 <!-- submenu -->
-                <ul class="hidden">
+                <ul class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-5 text-zinc-700 bg-white dark:text-white dark:bg-zinc-700 text-base border-t-[3px] border-t-orange-300 tracking-normal shadow-normal rounded-2xl transition-all child:inline-block child:transition-colors child-hover:text-orange-300">
                     <li><a href="#">قهوه ویژه</a></li>
                     <li><a href="#">ویژه در سطح جهانی</a></li>
                     <li><a href="#">قهوه درجه یک</a></li>
@@ -51,14 +51,16 @@
         </ul>
     </nav>
     <!-- cart & login -->
-    <div class="flex">
-        <div class="flex gap-x-5">
+    <div class="flex text-xl text-orange-200 gap-x-10">
+        <div class="flex gap-x-5 items-center">
             <!-- switch & cart -->
-            <div><svg class="w-7 h-7"><use xlink:href="#shopping-cart"></use></svg></div>
-            <div><svg class="w-7 h-7"><use xlink:href="#moon"></use></svg></div>
+            <div><svg class="w-8 h-8"><use xlink:href="#shopping-cart"></use></svg></div>
+            <div><svg class="w-8 h-8"><use xlink:href="#moon"></use></svg></div>
         </div>
+        <!-- divide border -->
+        <span class="block w-px h-14 bg-white/20"></span>
         <!-- login & submit -->
-        <a class="flex" href="#"><svg class="w-7 h-7"><use xlink:href="#arrow-left-on-rectangle"></use></svg>ورود | ثبت نام</a>
+        <a class="flex items-center gap-x-2.5 tracking-tightest" href="#"><svg class="w-7 h-7 rotate-180"><use xlink:href="#arrow-left-on-rectangle"></use></svg><span>ورود  |  ثبت‌نام</span></a>
     </div>
     
 </div>
