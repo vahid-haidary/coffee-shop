@@ -197,18 +197,20 @@
   <!-- HEADER RESPONSIVE -->
   <div class="flex md:hidden items-center justify-between h-16 p-x-4 bg-white dark:bg-zinc-700">
             <!-- nav icon -->
-    <div>
+    <div class="nav-icon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white"><use href="#bars3"></use></svg>
     </div>
             <!-- menu -->
-    <div class="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
+    <div class="nav fixed top-0 bottom-0 -right-64 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
             <!-- top menu -->
         <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
             <div class="flex items-center gap-x-3.5">
                 <svg class="w-[41px] h-10 text-orange-300"><use href="#logo"></use></svg> 
                <svg class="w-[100px] h-10 text-orange-300"><use href="#logo-type"></use></svg> 
             </div>
-            <svg class="w-5 h-5 text-zinc-600 dark:text-white "><use href="#x-mark"></use></svg> 
+            <div class="nav-close-btn">
+                <svg class="w-5 h-5 text-zinc-600 dark:text-white "><use href="#x-mark"></use></svg> 
+            </div>
         </div>
 
         <!-- midle menu -->
@@ -216,20 +218,29 @@
            <a class="flex items-center gap-x-2" href="#">
             <svg class="w-5 h-5"><use href="#home"></use></svg>
             صفحه اصلی
-            </a></li>
+            </a>
         </div> 
         <ul class="child:pr-2.5 space-y-6 text-zinc-600 dark:text-white">
         
         
-            <li class="flex items-center justify-between"><a class="flex items-center gap-x-2" href="#">
-            <svg class="w-5 h-5"><use href="#shopping-bag"></use></svg>
-            فروشگاه
-            </a>
-                <span>
-                    <svg class="w-4 h-4"><use href="#chevron-down"></use></svg>
-                </span>
-            </li> 
-        
+            <li>
+                <div class="flex items-center justify-between ">
+                    <a class="flex items-center gap-x-2" href="#">
+                        <svg class="w-5 h-5"><use href="#shopping-bag"></use></svg>
+                        فروشگاه</a>
+                        <span class="submenu-open-btn">
+                            <svg class="w-4 h-4"><use href="#chevron-down"></use></svg>
+                        </span>
+                </div>
+                <div class="submenu ">
+                    <a href="#">قهوه ویژه</a>
+                    <a href="#" class="submenu_item--active">ویژه در سطح جهانی</a>
+                    <a href="#">قهوه درجه یک</a>
+                    <a href="#">ترکیبات تجاری</a>
+                    <a href="#">کپسول قهوه</a>
+                    <a href="#">قهوه زینو برزیلی</a>
+                </div>
+            </li>  
         
             <li><a class="flex items-center gap-x-2" href="#">
             <svg class="w-5 h-5"><use href="#chat"></use></svg>
@@ -256,7 +267,7 @@
             
         </ul>
             <!-- footer menu -->
-        <div class="flex flex-col items-start gap-y-6 pt-8 px-2.5 mt-8 border-t  text-orange-300 border-t-gray-100 dark:border-t-white/10">
+        <div class="flex flex-col items-start gap-y-6 py-8 px-2.5 mt-8 border-t  text-orange-300 border-t-gray-100 dark:border-t-white/10">
             
             <a href="#" class="inline-flex items-center gap-x-2">
                 <svg class="w-5 h-5 rotate-180 "><use href="#arrow-left-on-rectangle"></use></svg>
@@ -291,7 +302,31 @@
     <div>
         <svg class="w-6 h-6 text-zinc-700 dark:text-white"><use href="#shopping-cart"></use></svg>
     </div>
+        <!-- CART  -->
+        <div class="fixed top-0 bottom-0 left-0 w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
+            <!-- cart header -->
+        <div class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
+            <div class="cart-close-btn">
+                <svg class="w-5 h-5 text-zinc-600 dark:text-white "><use href="#x-mark"></use></svg> 
+            </div>
+            <span class="text-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
+        </div>
 
+            <!-- cart body -->
+
+            <!-- cart footer  -->
+        <div class="flex items-start gap-x-4 ">
+            <a href="#" class="flex items-center justify-center h-11 w-28 text-white bg-teal-600 dark:bg-emerald-500  hover:bg-teal-700 dark:hover:bg-emerald-600 transition-colors rounded-xl tracking-tightest">ثبت سفارش</a>
+            <div>
+                <span class="font-DanaMedium text-gray-300 text-xs tracking-tighter ">مبلغ قابل پرداخت</span>
+                <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                    350,000
+                    <span class="font-Dana text-xs">تومان</span>
+                </div>
+            </div>
+        </div>    
+    </div> 
+        
   </div>
  
 
@@ -314,7 +349,7 @@
 
     
 <!-- RESPONSIVE overlay -->
-<div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10 "></div>
+<div class="overlay overlay--visible"></div>
 <!-- js link -->
 <script src="scripts/app.js"></script>
 </body>
