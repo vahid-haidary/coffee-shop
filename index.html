@@ -91,7 +91,7 @@
               
                   
     </svg>
-
+    <!-- HEADER -->
 <header class="fixed top-9 right-0 left-0 hidden md:flex items-center w-[98%] lg:w-[90%] h-24 mx-auto px-5 lg:px-10 py-5 bg-black/50 rounded-3xl backdrop-blur-[6px]">
   
 <!-- menu container -->
@@ -298,14 +298,14 @@
     <div>
         <svg class="w-[100px] h-10 text-orange-300"><use href="#logo-type"></use></svg>
     </div>
-            <!-- shopping-icon -->
-    <div>
+            <!-- CART-icon -->
+    <div class="cart-icon">
         <svg class="w-6 h-6 text-zinc-700 dark:text-white"><use href="#shopping-cart"></use></svg>
     </div>
         <!-- CART  -->
-        <div class="fixed top-0 bottom-0 left-0 w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
+        <div class="cart fixed top-0 bottom-0 -left-64 flex flex-col w-64 min-h-screen pt-5 px-4 bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
             <!-- cart header -->
-        <div class="flex items-center justify-between pb-5 mb-5 border-b border-b-gray-300 dark:border-b-white/10">
+        <div class="flex items-center justify-between pb-5 mb-0 border-b border-b-gray-300 dark:border-b-white/10">
             <div class="cart-close-btn">
                 <svg class="w-5 h-5 text-zinc-600 dark:text-white "><use href="#x-mark"></use></svg> 
             </div>
@@ -313,9 +313,38 @@
         </div>
 
             <!-- cart body -->
-
+        <div class="">
+            <div class="pb-1 border-b border-b-gray-100 dark:border-b-white/10 divide-y divide-gray-100 dark:divide-white/10 child:py-5 ">                    
+                <div class="flex gap-x-1">
+                <img src="images/products/p1.png" class="w-[90px] h-[90px]" alt="product1">
+                <div class="flex flex-col gapy-1.5 justify-between">
+                    <h4 class="font-Dana text-sm text-zinc-700 dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                    <div>
+                        <span class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter ">14.500 تومان تخفیف</span>
+                        <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="flex gap-x-1">
+                <img src="images/products/p2.png" class="w-[90px] h-[90px]" alt="product1">
+                <div class="flex flex-col gapy-1.5 justify-between">
+                    <h4 class="font-Dana text-sm text-zinc-700 dark:text-white line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                    <div>
+                        <span class="text-teal-600 dark:text-emerald-500 font-DanaMedium text-xs tracking-tighter ">14.500 تومان تخفیف</span>
+                        <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                            175,000
+                            <span class="font-Dana text-xs">تومان</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
             <!-- cart footer  -->
-        <div class="flex items-start gap-x-4 ">
+        <div class="flex items-end mt-auto mb-8 gap-x-4 ">
             <a href="#" class="flex items-center justify-center h-11 w-28 text-white bg-teal-600 dark:bg-emerald-500  hover:bg-teal-700 dark:hover:bg-emerald-600 transition-colors rounded-xl tracking-tightest">ثبت سفارش</a>
             <div>
                 <span class="font-DanaMedium text-gray-300 text-xs tracking-tighter ">مبلغ قابل پرداخت</span>
@@ -327,8 +356,9 @@
         </div>    
     </div> 
         
-  </div>
- 
+</div>
+
+    <!-- MAIN -->
 
 
 
@@ -344,12 +374,8 @@
 
 
 
-
-
-
-    
 <!-- RESPONSIVE overlay -->
-<div class="overlay overlay--visible"></div>
+<div class="overlay"></div>
 <!-- js link -->
 <script src="scripts/app.js"></script>
 </body>
