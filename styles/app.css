@@ -783,6 +783,10 @@ video {
   margin-left: 12px;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -813,10 +817,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .line-clamp-2 {
@@ -872,6 +872,14 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-2\.5 {
+  height: 0.625rem;
 }
 
 .h-24 {
@@ -962,20 +970,8 @@ video {
   height: 1px;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-2\.5 {
-  height: 0.625rem;
-}
-
 .max-h-\[630px\] {
   max-height: 630px;
-}
-
-.min-h-screen {
-  min-height: 100vh;
 }
 
 .w-1 {
@@ -988,6 +984,10 @@ video {
 
 .w-2 {
   width: 0.5rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
 }
 
 .w-25 {
@@ -1104,10 +1104,6 @@ video {
 
 .w-px {
   width: 1px;
-}
-
-.w-2\.5 {
-  width: 0.625rem;
 }
 
 .max-w-\[193px\] {
@@ -1450,12 +1446,12 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-home-mobile {
-  background-image: url(../images/headerBgMobile.webp);
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-home-mobile {
+  background-image: url(../images/headerBgMobile.webp);
 }
 
 .from-emerald-500 {
@@ -1604,8 +1600,16 @@ video {
   padding-right: 1.75rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-5 {
@@ -1618,14 +1622,6 @@ video {
 
 .pt-\[18px\] {
   padding-top: 18px;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-left {
@@ -1704,19 +1700,14 @@ video {
   line-height: 1rem;
 }
 
-.text-xs\/\[24px\] {
-  font-size: 0.75rem;
-  line-height: 24px;
-}
-
-.text-xs\/\[20px\] {
-  font-size: 0.75rem;
-  line-height: 20px;
-}
-
 .text-xs\/5 {
   font-size: 0.75rem;
   line-height: 1.25rem;
+}
+
+.text-xs\/\[24px\] {
+  font-size: 0.75rem;
+  line-height: 24px;
 }
 
 .tracking-normal {
@@ -2417,6 +2408,10 @@ html.dark .services::before{
     margin-bottom: 18px;
   }
 
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .md\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -2431,10 +2426,6 @@ html.dark .services::before{
 
   .md\:mt-\[26px\] {
     margin-top: 26px;
-  }
-
-  .md\:mt-11 {
-    margin-top: 2.75rem;
   }
 
   .md\:inline-block {
@@ -2666,6 +2657,14 @@ html.dark .services::before{
     padding-right: 3rem;
   }
 
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-11 {
+    padding-top: 2.75rem;
+  }
+
   .md\:pt-24 {
     padding-top: 6rem;
   }
@@ -2676,18 +2675,6 @@ html.dark .services::before{
 
   .md\:pt-\[62px\] {
     padding-top: 62px;
-  }
-
-  .md\:pt-11 {
-    padding-top: 2.75rem;
-  }
-
-  .md\:pt-4 {
-    padding-top: 1rem;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
   }
 
   .md\:font-Dana {
@@ -2733,6 +2720,11 @@ html.dark .services::before{
     line-height: 62px;
   }
 
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-base\/\[34px\] {
     font-size: 1rem;
     line-height: 34px;
@@ -2771,11 +2763,6 @@ html.dark .services::before{
   .md\:text-xl\/\[48px\] {
     font-size: 1.25rem;
     line-height: 48px;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md\:flex-center {
